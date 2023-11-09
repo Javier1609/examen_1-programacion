@@ -1,5 +1,9 @@
 # examen_1-programacion
 
+preguntas de programar
+
+gh repo clone Javier1609/examen_1-programacion
+
 
 
 preguntas tipo test
