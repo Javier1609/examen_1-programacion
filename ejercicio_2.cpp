@@ -17,7 +17,12 @@ public:
 
     void mostrar_info() {
         std::cout << "Nombre: " << nombre << std::endl;
-        std::cout << "Edad: " << edad << " años" << std::endl;
+        std::cout << "Edad: " << edad << " anos" << std::endl;
         std::cout << "Grado: " << grado << std::endl;
     }
 };
+
+int main() {
+    Estudiante estudiante("Javier", 18, "Ingenieria mecanica");
+    estudiante.mostrar_info();
+}
