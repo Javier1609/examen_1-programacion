@@ -16,4 +16,12 @@ double promedio(const std::vector<int>& calificaciones) {
 
     return static_cast<double>(suma) / calificaciones.size();
 }
+int main() {
+    std::vector<int> calificaciones = {4, 2, 6, 7, 5};
 
+    double promed = promedio(calificaciones);
+
+    std::cout << "El promedio de las calificaciones es: " << promed << std::endl;
+
+    return 0;
+}
