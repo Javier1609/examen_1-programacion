@@ -20,7 +20,14 @@ public:
     }
 };
 
+int main() {
 
+    Asistencia registro("2023-11-09", "Asistio");
+
+    registro.mostrar_asistencia();
+
+    return 0;
+}
 
 
 
