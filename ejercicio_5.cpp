@@ -17,6 +17,12 @@ public:
         grado = c;
     }
 
+    void mostrar_info() {
+        std::cout << "Nombre: " << nombre << std::endl;
+        std::cout << "Edad: " << edad << " anos" << std::endl;
+        std::cout << "Grado: " << grado << std::endl;
+    }
+
     void registrar_materia(const std::string& materia) {
         materias.push_back(materia);
     }
@@ -29,3 +35,17 @@ public:
         }
     }
 };
+int main() {
+
+    Estudiante estudiante("Javier gomez", 18, "ingeria mecanica");
+
+
+    estudiante.registrar_materia("programacion");
+    estudiante.registrar_materia("mecanica");
+    estudiante.registrar_materia("Historia de la mecanica");
+
+    estudiante.mostrar_info();
+    estudiante.mostrar_materias();
+
+    return 0;
+}
