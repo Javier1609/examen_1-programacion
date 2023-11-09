@@ -22,5 +22,25 @@ std::vector<Estudiante> filtrarEstudiantesPorGrado(const std::vector<Estudiante>
 
     return estudiantesPorGrado;
 }
+int main() {
+
+    std::vector<Estudiante> estudiantes;
+    estudiantes.push_back(Estudiante("Juan", 20, "Tercer Grado"));
+    estudiantes.push_back(Estudiante("jaime", 22, "Segundo Grado"));
+    estudiantes.push_back(Estudiante("Pepe", 19, "Tercer Grado"));
+    estudiantes.push_back(Estudiante("javier", 21, "Cuarto Grado"));
+
+
+    std::string gradoBuscado = "Tercer Grado";
+    std::vector<Estudiante> estudiantesFiltrados = filtrarEstudiantesPorGrado(estudiantes, gradoBuscado);
+
+
+    std::cout << "Estudiantes del grado " << gradoBuscado << ":" << std::endl;
+    for (const Estudiante& estudiante : estudiantesFiltrados) {
+        std::cout << "Nombre: " << estudiante.nombre << ", Edad: " << estudiante.edad << std::endl;
+    }
+
+    return 0;
+}
 
 
