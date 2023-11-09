@@ -15,4 +15,9 @@ public:
         grado = g;
     }
 
-
+    void mostrar_info() {
+        std::cout << "Nombre: " << nombre << std::endl;
+        std::cout << "Edad: " << edad << " años" << std::endl;
+        std::cout << "Grado: " << grado << std::endl;
+    }
+};
