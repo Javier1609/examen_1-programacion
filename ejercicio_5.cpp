@@ -16,3 +16,16 @@ public:
         edad = b;
         grado = c;
     }
+
+    void registrar_materia(const std::string& materia) {
+        materias.push_back(materia);
+    }
+
+
+    void mostrar_materias() {
+        std::cout << "Materias registradas para " << nombre << ":" << std::endl;
+        for (const std::string& materia : materias) {
+            std::cout << "  - " << materia << std::endl;
+        }
+    }
+};
