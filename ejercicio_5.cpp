@@ -10,7 +10,7 @@ private:
     std::vector<std::string> materias;
 
 public:
-    // Constructor de la clase
+   
     Estudiante(const std::string& a, int b, const std::string& c) {
         nombre = a;
         edad = b;
