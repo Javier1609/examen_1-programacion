@@ -9,10 +9,10 @@ private:
 
 public:
 
-    Estudiante(const std::string& n, int e, const std::string& g) {
-        nombre = n;
-        edad = e;
-        grado = g;
+    Estudiante(const std::string& a, int b, const std::string& c) {
+        nombre = a;
+        edad = b;
+        grado = c;
     }
 
     void mostrar_info() {
